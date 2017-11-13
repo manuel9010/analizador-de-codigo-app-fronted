@@ -1,0 +1,17 @@
+.Container-card  {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  
+  .Text-Container {
+    white-space: pre-wrap;
+    width: 800px;
+  }
+  
+  
