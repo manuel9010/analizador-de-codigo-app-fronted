@@ -5,7 +5,6 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 class ApiRest  {
 
-    
 
    static analizadorCodigo(data) {
 

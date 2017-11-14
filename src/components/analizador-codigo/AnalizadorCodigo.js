@@ -31,6 +31,12 @@ class AnalizadorCodigo extends React.Component {
 
     }
 
+
+    handleChange(event) {
+        this.setState({ textAreaCodigo: event.target.value });
+
+    }
+
     onAnalizarCodigo(data) {
         ApiRest.analizadorCodigo(JSON.stringify({ codigo: data }))
             .then(response => {
@@ -50,11 +56,6 @@ class AnalizadorCodigo extends React.Component {
                 this.setState({ showSpiner: false });
                 alert("Ocurrio un inconveniente intentente nuevamente!")
             })
-
-    }
-
-    handleChange(event) {
-        this.setState({ textAreaCodigo: event.target.value });
 
     }
 
